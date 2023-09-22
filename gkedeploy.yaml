@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: pythonflask
-        image: gcr.io/$PROJECT_ID/gcpdevopsprj
+        image: gcr.io/modified-tome-393216/gcpdevopsprj
         ports:
         - containerPort: 5000
         env:
