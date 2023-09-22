@@ -1,1 +1,1 @@
-# gcp-project to deploy the workload automatically from git repo to GKE
+# gcp-project to deploy the workload automatically from git repo to GKE using cloud build
