@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pythonflask-deployment
+  namespace: stag-workload
   labels:
     app: gcp
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
       - name: pythonflask
-        image: gcr.io/modified-tome-393216/gcpdevopsprj
+        image: gcr.io/modified-tome-393216/gcpdevops-stageprj
         ports:
         - containerPort: 5000
         env:
@@ -27,6 +28,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: my-service
+  namespace: stag-workload
 spec:
   selector:
     app: gcp
