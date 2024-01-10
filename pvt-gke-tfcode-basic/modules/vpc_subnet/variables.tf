@@ -1,12 +1,15 @@
 variable "vpc_name" {
-  default     = ""
+  default = ""
 }
 variable "subnet_name" {
-  default     = ""
+  default = ""
 }
 variable "region" {
-  default     = ""
+  default = ""
 }
 variable "subnet_cidr_range" {
-  default     = ""
+  default = ""
+}
+variable "project_id" {
+  default = ""
 }

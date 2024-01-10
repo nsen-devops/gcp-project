@@ -1,6 +1,6 @@
 output "vpcname" {
-  value = "${google_compute_network.vpc.name}"
+  value = data.google_compute_network.vpc.name
 }
 output "subnetname" {
-  value = "${google_compute_subnetwork.subnet.name}"
+  value = google_compute_subnetwork.subnet.name
 }
